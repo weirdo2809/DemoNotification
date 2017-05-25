@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 Uri uri= RingtoneManager.getDefaultUri
                         (RingtoneManager.TYPE_NOTIFICATION);
                 builder.setSound(uri);
-
+                builder.setPriority(Notification.PRIORITY_HIGH);
                 Notification n = builder.build();
                 NotificationManager notificationManager = (NotificationManager)
                         getSystemService(NOTIFICATION_SERVICE);
